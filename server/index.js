@@ -8,16 +8,23 @@ app.use(cors());
 app.get('/offers', (req, res) => {
   fs.readFile('./data/data.json', (err, json) => {
     let obj = JSON.parse(json);
+    const { offset, limit } = req.query;
     setTimeout(() => {
       return res.json(
-        obj.offers.map((offer) => ({
-          id: offer.id,
-          name: offer.carGroupInfo.modelExample.name,
-          imgUrl: offer.carGroupInfo.modelExample.imageUrl,
-          price: offer.prices.basePrice.amount.value,
-        }))
+        {
+          offers: obj.offers
+            .slice(Number(offset), Number(offset) + Number(limit))
+            .map((offer) => ({
+              id: offer.id,
+              name: offer.carGroupInfo.modelExample.name,
+              imgUrl: offer.carGroupInfo.modelExample.imageUrl,
+              price: offer.prices.basePrice.amount.value,
+              total: obj.offers.length,
+            })),
+            offersTotal: obj.offers.length
+        }
       );
-    }, 5000); // time to show loading spinner
+    }, 2000); // time to show loading state
   });
 });
 

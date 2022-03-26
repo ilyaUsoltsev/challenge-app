@@ -4,3 +4,8 @@ export interface IOffer {
   imgUrl: string;
   price: number;
 }
+
+export interface IOffersResponse {
+  offersTotal: number;
+  offers: IOffer[];
+}
