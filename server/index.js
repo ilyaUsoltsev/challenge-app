@@ -9,7 +9,14 @@ app.get('/offers', (req, res) => {
   fs.readFile('./data/data.json', (err, json) => {
     let obj = JSON.parse(json);
     setTimeout(() => {
-      return res.json(obj.offers);
+      return res.json(
+        obj.offers.map((offer) => ({
+          id: offer.id,
+          name: offer.carGroupInfo.modelExample.name,
+          imgUrl: offer.carGroupInfo.modelExample.imageUrl,
+          price: offer.prices.basePrice.amount.value,
+        }))
+      );
     }, 5000); // time to show loading spinner
   });
 });
