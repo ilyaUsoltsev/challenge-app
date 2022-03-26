@@ -9,13 +9,17 @@
     "bootstrap": "npm run bootstrap-server && npm run bootstrap-client && npm i && npm run dev",
     "client": "cd client && npm start",
     "backend": "cd server && node index.js",
-    "dev": "concurrently \"npm run backend\" \"npm run client\""
+    "dev": "concurrently \"npm run backend\" \"npm run client\"",
+    "test": "cd client && npm test",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "concurrently": "^7.0.0"
+    "concurrently": "^7.0.0",
+    "husky": "^7.0.4"
   }
+
 }
