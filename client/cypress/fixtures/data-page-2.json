@@ -1,0 +1,89 @@
+{
+    "offers": [
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-ILMR",
+            "name": "TEST 22 Series",
+            "imgUrl": "",
+            "price": 158.33,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-ILAR",
+            "name": "BMW 2 Series Aut.",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/ed617d40237bfccaf82fc7d1f5e6ee9d5acbc381.jpeg",
+            "price": 169.54,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-SSMR",
+            "name": "BMW 2 Series Coupé",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/f07393c2ea4ca83ead56963f72a7fec097f5e3a0.jpg",
+            "price": 174.32,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-FDMR",
+            "name": "BMW 3 Series",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/e84c2289d5010484c914e72249415a5112ab9e1f.jpeg",
+            "price": 179.93,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-FDAR",
+            "name": "BMW 3 Series Aut.",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/e84c2289d5010484c914e72249415a5112ab9e1f.jpeg",
+            "price": 191.96,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-LSAR",
+            "name": "BMW 430/435 Coupé",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/612cebc6e1618de2055e1d89f4055241e818166f.jpeg",
+            "price": 231.98,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-LDAR",
+            "name": "BMW 530/540 Aut.",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/982e53f6d710cc015bdb2efa23910720b7dad2c7.jpeg",
+            "price": 218.38,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-LWAR",
+            "name": "BMW 530/540 Touring Aut.",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/bfed60153b357e7d5498666b940f12695c0da278.jpeg",
+            "price": 219.98,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-XSAR",
+            "name": "BMW 630/640 GT",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/cedb0197b29887c97e8a60f82aa1a59428e27360.jpg",
+            "price": 354.47,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-XDAR",
+            "name": "BMW 7 Series Aut.",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/50b3c63af0f3c2c925cf007eac4c0539d4245d44.jpg",
+            "price": 344.86,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-CCAN",
+            "name": "BMW M135i",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/761cbfde16a2330cafcf318979b91061e0195829.jpg",
+            "price": 284.81,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-FCAR",
+            "name": "BMW M340",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/05bf40dd934fe5c5c931775aa307c84d4e17d401.jpeg",
+            "price": 318.44,
+            "total": 63
+        }
+    ],
+    "offersTotal": 63
+}

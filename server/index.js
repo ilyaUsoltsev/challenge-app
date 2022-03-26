@@ -27,7 +27,6 @@ app.get('/offers', (req, res) => {
             name: offer.carGroupInfo.modelExample.name,
             imgUrl: offer.carGroupInfo.modelExample.imageUrl,
             price: offer.prices.basePrice.amount.value,
-            total: obj.offers.length,
           })),
         offersTotal: obj.offers.length,
       });

@@ -8,11 +8,14 @@ interface IProps {
 
 export const OffersCard: FC<IProps> = ({ offer }) => {
   return (
-    <Styled.Cell>
+    <Styled.Cell data-testid='offer-card'>
       <Styled.Content>
         <h3>{offer.name}</h3>
-        <Styled.CarImage src={offer.imgUrl} alt={offer.name} />
-        <Styled.Price>{offer.price}€</Styled.Price>
+        <Styled.CarImage
+          src={offer.imgUrl || '/default-car-image.jpeg'}
+          alt={offer.name}
+        />
+        <Styled.Price data-testid='offer-card-price'>{`${offer.price}€`}</Styled.Price>
       </Styled.Content>
     </Styled.Cell>
   );

@@ -1,0 +1,89 @@
+{
+    "offers": [
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-SDMR",
+            "name": "TESTSedan",
+            "imgUrl": "",
+            "price": 166.33,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-FWMR",
+            "name": "Audi A4 Avant",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/c4845f6d6d8950431934b646f9af03e96a6b762a.jpeg",
+            "price": 183.96,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-FWAR",
+            "name": "Audi A4 Avant Aut.",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/c4845f6d6d8950431934b646f9af03e96a6b762a.jpeg",
+            "price": 196.74,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-PSAR",
+            "name": "Audi A5 40 Coupé/Sportback",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/b1c94caec9b28d25e2b839df6690d068438832b5.jpeg",
+            "price": 219.2,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-PWAR",
+            "name": "Audi A6 Avant Aut.",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/52438026dee2bb21212d4cb6f65b87b70b093512.jpeg",
+            "price": 222.38,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-LCAR",
+            "name": "Audi S5 Sportback",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/871ec184f8a632854c6dc49cec1cd616b4637853.jpeg",
+            "price": 343.26,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-LDAN",
+            "name": "Audi S6",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/a4673a457b660e2d73587fa4ffc1f973551aee36.jpeg",
+            "price": 382.49,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-LWMR",
+            "name": "Audi S6 Avant",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/6d1cfd3104cc014589f578d8688b2f9e8b2431a7.jpeg",
+            "price": 382.49,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-XCAR",
+            "name": "Audi S8",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/d60bb92aa7761a332ad05303d3379c4b85f83484.jpeg",
+            "price": 612.29,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-SSAX",
+            "name": "Audi TTS Coupé",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/e286e5b7ef2e54ab80c454358329a08ba8045fbf.jpeg",
+            "price": 294.42,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-CPMR",
+            "name": "BMW 1 Series",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/5e25e372be4d6763928630f1b84df5979df0ff77.jpeg",
+            "price": 155.9,
+            "total": 63
+        },
+        {
+            "id": "2436432a-e1d5-4649-bece-f98834f6ee1d-CPAR",
+            "name": "BMW 1 Series Aut.",
+            "imgUrl": "https://sixt-vehicle-group-info-images-prod.s3-eu-west-1.amazonaws.com/5e25e372be4d6763928630f1b84df5979df0ff77.jpeg",
+            "price": 171.15,
+            "total": 63
+        }
+    ],
+    "offersTotal": 63
+}
