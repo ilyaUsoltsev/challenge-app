@@ -1,8 +1,12 @@
-import styles from './offers.module.css';
 import { useInView } from 'react-intersection-observer';
-import { getShimmerArray } from './utils/getShimmerArray';
-import { useGetOffers } from './hooks/useGetOffers';
+import { getShimmerArray } from './utils/get-shimmer-array';
+import { useGetOffers } from './hooks/use-get-offers';
 import { useEffect } from 'react';
+import {
+  StyledPageContainer,
+  StyledPageTitle,
+} from '../../styles/page/page.styles';
+import * as Styled from './offers.styles';
 
 export function OffersPage() {
   const { offers, status, loadMoreOffers } = useGetOffers();
@@ -19,35 +23,29 @@ export function OffersPage() {
   }
 
   return (
-    <div className={styles.pageContainer}>
-      <h1 className={styles.title}>Offers</h1>
-      <div className={styles.container}>
+    <StyledPageContainer>
+      <StyledPageTitle>Offers</StyledPageTitle>
+      <Styled.Container>
         {offers.length
           ? offers.map((offer) => (
-              <div key={offer.id} className={styles.cell}>
-                <div className={styles.content}>
+              <Styled.Cell key={offer.id}>
+                <Styled.Content>
                   <h3>{offer.name}</h3>
-                  <img
-                    src={offer.imgUrl}
-                    alt={offer.name}
-                    className={styles.image}
-                  />
-                  <div className={styles.price}>{offer.price}€</div>
-                </div>
-              </div>
+                  <Styled.CarImage src={offer.imgUrl} alt={offer.name} />
+                  <Styled.Price>{offer.price}€</Styled.Price>
+                </Styled.Content>
+              </Styled.Cell>
             ))
           : null}
         {status === 'loading'
           ? getShimmerArray(offers.length === 0 ? 12 : 4).map((index) => (
-              <div key={index} className={styles.cell}>
-                <div
-                  className={`${styles.shimmercontent} ${styles.shimmerBG}`}
-                ></div>
-              </div>
+              <Styled.Cell key={index}>
+                <Styled.ShimmerCard />
+              </Styled.Cell>
             ))
           : null}
-      </div>
+      </Styled.Container>
       <div style={{ height: '1px' }} ref={intersectionRef}></div>
-    </div>
+    </StyledPageContainer>
   );
 }
