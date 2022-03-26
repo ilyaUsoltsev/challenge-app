@@ -1,17 +1,15 @@
 import { useCallback, useEffect } from 'react';
 import { useAppSelector, useAppDispatch } from '../../../redux/hooks';
 import {
-  selectOffers,
-  selectOffersStatus,
-  selectOffersTotal,
   fetchOffersAsync,
+  selectOffersState,
 } from '../../../redux/offers/offers-reducer';
 import { PAGE_LIMIT } from '../constants';
 
 export const useGetOffers = () => {
-  const offers = useAppSelector(selectOffers);
-  const status = useAppSelector(selectOffersStatus);
-  const offersTotal = useAppSelector(selectOffersTotal);
+  const { offers, status, error, offersTotal } =
+    useAppSelector(selectOffersState);
+
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -19,7 +17,7 @@ export const useGetOffers = () => {
   }, []);
 
   const loadMoreOffers = useCallback(() => {
-    if (status !== 'loading' && offersTotal > offers.length) {
+    if (status === 'idle' && offers && offersTotal > offers.length) {
       dispatch(fetchOffersAsync({ limit: PAGE_LIMIT, offset: offers.length }));
     }
   }, [status, offersTotal, offers, dispatch]);
@@ -28,5 +26,6 @@ export const useGetOffers = () => {
     offers,
     status,
     loadMoreOffers,
+    error,
   };
 };
