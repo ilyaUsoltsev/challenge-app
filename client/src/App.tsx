@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { Offers } from './features/offers/offers';
 
 function App() {
