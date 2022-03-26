@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { RootState } from '../../app/store';
-import { fetchOffers, IPaginationConfig } from './offerAPI';
-import { IOffer } from './offer.types';
+import { RootState } from '../store';
+import { fetchOffers, IPaginationConfig } from '../../api/offers/offers';
+import { IOffer } from '../../api/offers/offer.types';
 
 export interface CounterState {
   offers: IOffer[];

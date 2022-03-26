@@ -1,12 +1,8 @@
 import React from 'react';
-import { Offers } from './features/offers/offers';
+import { OffersPage } from './pages/offers/offers-page';
 
 function App() {
-  return (
-    <div className='App'>
-      <Offers />
-    </div>
-  );
+  return <OffersPage />;
 }
 
 export default App;

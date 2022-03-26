@@ -1,35 +1,18 @@
-import React, { useEffect } from 'react';
 import styles from './offers.module.css';
 import { useInView } from 'react-intersection-observer';
-import { useAppSelector, useAppDispatch } from '../../app/hooks';
-import { selectOffersTotal } from './offersSlice';
-import {
-  fetchOffersAsync,
-  selectOffers,
-  selectOffersStatus,
-} from './offersSlice';
+import { getShimmerArray } from './utils/getShimmerArray';
+import { useGetOffers } from './hooks/useGetOffers';
+import { useEffect } from 'react';
 
-const PAGE_LIMIT = 12;
-const getShimmerArray = (cardsToShow: number) =>
-  Array.from(Array(cardsToShow).keys());
-
-export function Offers() {
-  const offers = useAppSelector(selectOffers);
-  const status = useAppSelector(selectOffersStatus);
-  const offersTotal = useAppSelector(selectOffersTotal);
-  const dispatch = useAppDispatch();
-
+export function OffersPage() {
+  const { offers, status, loadMoreOffers } = useGetOffers();
   const [intersectionRef, inView] = useInView({ threshold: 0 });
 
   useEffect(() => {
-    dispatch(fetchOffersAsync({ limit: PAGE_LIMIT, offset: 0 }));
-  }, []);
-
-  useEffect(() => {
-    if (inView && status !== 'loading' && offersTotal > offers.length) {
-      dispatch(fetchOffersAsync({ limit: PAGE_LIMIT, offset: offers.length }));
+    if (inView) {
+      loadMoreOffers();
     }
-  }, [inView, offersTotal]);
+  }, [inView, loadMoreOffers]);
 
   if (status === 'failed') {
     return <div> ERROR!!!</div>;
