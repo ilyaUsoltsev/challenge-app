@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledPageContainer = styled.div`
   margin: 0 auto;
   background-color: rgb(248, 246, 246);
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 `;
 
