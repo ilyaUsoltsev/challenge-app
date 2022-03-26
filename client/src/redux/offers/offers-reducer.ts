@@ -25,7 +25,12 @@ export const fetchOffersAsync = createAsyncThunk(
   'offers/fetchOffers',
   async (config: IPaginationConfig) => {
     const response = await fetchOffers(config);
-    const result = await response.json();
+    let result;
+    try {
+      result = await response.json();
+    } catch {
+      result = { message: 'Server error' };
+    }
     if (response.ok) {
       return result;
     }

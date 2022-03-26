@@ -19,7 +19,7 @@ export function OffersPage() {
       loadMoreOffers();
     }
   }, [inView]);
-  console.log(status, 'status');
+
   return (
     <StyledPageContainer>
       <StyledPageTitle>Offers</StyledPageTitle>
