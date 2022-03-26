@@ -7,7 +7,8 @@ export const StyledPageContainer = styled.div`
   width: 100%;
 `;
 
-export const StyledPageTitle = styled.h3`
+export const StyledPageTitle = styled.h1`
+  text-transform: capitalize;
   margin: 0;
   text-align: center;
   padding: 2rem;

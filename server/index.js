@@ -9,9 +9,14 @@ app.get('/offers', (req, res) => {
   fs.readFile('./data/data.json', (err, json) => {
     let obj = JSON.parse(json);
     const { offset, limit } = req.query;
-    // //Simulating error
+    //Simulating error
     // return res.status(400).send({
-    //   message: 'This is an error!',
+    //   message: 'This is an error message from server',
+    // });
+    //Simulating empty offers array
+    // return res.json({
+    //   offers: [],
+    //   offersTotal: 0,
     // });
     setTimeout(() => {
       return res.json({

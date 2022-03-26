@@ -23,7 +23,7 @@ export function OffersPage() {
   return (
     <StyledPageContainer>
       <StyledPageTitle>Offers</StyledPageTitle>
-      <WithError error={error}>
+      <WithError error={error} clientMessage={'Failed to fetch offers'}>
         <Styled.Container>
           <OffersCards offers={offers} status={status} />
           <OffersLoadingCards

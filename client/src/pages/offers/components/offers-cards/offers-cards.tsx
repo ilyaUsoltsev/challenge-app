@@ -9,7 +9,7 @@ interface IProps {
 }
 
 export const OffersCards: FC<IProps> = ({ offers, status }) => {
-  if (!offers && status === 'idle') {
+  if (offers?.length === 0 && status === 'idle') {
     return <h2>No offers found</h2>;
   }
   return (

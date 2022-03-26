@@ -1,14 +1,23 @@
 import { SerializedError } from '@reduxjs/toolkit';
 import React, { FC } from 'react';
-import { StyledErrorMessage } from './with-error.styles';
+import {
+  StyledErrorMessage,
+  StyledErrorMessageClient,
+} from './with-error.styles';
 
 interface IProps {
   error?: SerializedError;
+  clientMessage: string;
 }
 
-const WithError: FC<IProps> = ({ error, children }) => {
+const WithError: FC<IProps> = ({ error, clientMessage, children }) => {
   if (error) {
-    return <StyledErrorMessage>{error.message}</StyledErrorMessage>;
+    return (
+      <>
+        <StyledErrorMessageClient>{clientMessage}</StyledErrorMessageClient>
+        <StyledErrorMessage>{error.message}</StyledErrorMessage>
+      </>
+    );
   }
   return <>{children}</>;
 };
