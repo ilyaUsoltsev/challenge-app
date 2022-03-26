@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "bootstrap-client": "cd client && npm i",
+    "bootstrap-server": "cd server && npm i",
+    "bootstrap": "npm run bootstrap-server && npm run bootstrap-client && npm i && npm run dev",
     "client": "cd client && npm start",
     "backend": "cd server && node index.js",
     "dev": "concurrently \"npm run backend\" \"npm run client\""
