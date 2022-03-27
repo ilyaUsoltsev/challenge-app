@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { OffersState } from '../../../../redux/offers/offers-reducer';
+import { OffersState } from '../../../../redux/offers/offers-state';
 import { getShimmerArray } from '../../utils/get-shimmer-array';
 import { Cell as StyledCell } from '../offers-card/offers-card.styles';
 import * as Styled from './offers-loading-cards.styles';

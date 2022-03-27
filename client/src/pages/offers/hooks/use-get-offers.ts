@@ -1,9 +1,7 @@
 import { useCallback, useEffect } from 'react';
 import { useAppSelector, useAppDispatch } from '../../../redux/hooks';
-import {
-  fetchOffersAsync,
-  selectOffersState,
-} from '../../../redux/offers/offers-reducer';
+import { selectOffersState } from '../../../redux/offers/offers-reducer';
+import { fetchOffersAsync } from '../../../redux/offers/offers-actions';
 import { PAGE_LIMIT } from '../constants';
 
 export const useGetOffers = () => {

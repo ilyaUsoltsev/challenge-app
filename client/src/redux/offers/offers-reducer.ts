@@ -1,46 +1,11 @@
-import {
-  createAsyncThunk,
-  createSlice,
-  SerializedError,
-} from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import { RootState } from '../store';
-import { fetchOffers, IPaginationConfig } from '../../api/offers/offers';
-import { IOffer } from '../../api/offers/offer.types';
-
-export interface OffersState {
-  offers?: IOffer[];
-  status: 'idle' | 'loading' | 'failed';
-  offersTotal: number;
-  error?: SerializedError;
-}
-
-const initialState: OffersState = {
-  offers: undefined,
-  status: 'idle',
-  offersTotal: 0,
-  error: undefined,
-};
-
-export const fetchOffersAsync = createAsyncThunk(
-  'offers/fetchOffers',
-  async (config: IPaginationConfig) => {
-    const response = await fetchOffers(config);
-    let result;
-    try {
-      result = await response.json();
-    } catch {
-      result = { message: 'Server error' };
-    }
-    if (response.ok) {
-      return result;
-    }
-    throw new Error(result.message);
-  }
-);
+import { offersInitialState } from './offers-state';
+import { fetchOffersAsync } from './offers-actions';
 
 export const offersSlice = createSlice({
   name: 'offers',
-  initialState,
+  initialState: offersInitialState,
   reducers: {},
   extraReducers: (builder) => {
     builder

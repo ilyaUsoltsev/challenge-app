@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { IOffer } from '../../../../api/offers/offer.types';
-import { OffersState } from '../../../../redux/offers/offers-reducer';
+import { OffersState } from '../../../../redux/offers/offers-state';
 import { OffersCard } from '../offers-card/offers-card';
 
 interface IProps {
